@@ -20,9 +20,9 @@ const Quiz = () => {
 
     const lastCheck=()=>{
         if (answer===data[index].correct) {
-            navigate("/Result",{state:{length:data.length,score:score+1}})
+            navigate("/quizz_app/Result",{state:{length:data.length,score:score+1}})
         }else{
-        navigate("/Result",{state:{length:data.length,score:score}})
+        navigate("/quizz_app/Result",{state:{length:data.length,score:score}})
     }}
     
 

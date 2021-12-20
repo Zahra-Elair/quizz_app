@@ -12,7 +12,7 @@ const Result = () => {
             <img src= {crown} alt='crown' className='logo'/>
             <h2>You've completed the Quiz</h2>
             <h2>You got {score} of {length}</h2>
-            <Link to="/"><button className="ui violet button" id='button'>Restart</button></Link>
+            <Link to="/quizz_app/"><button className="ui violet button" id='button'>Restart</button></Link>
         </div>
     );
 };
