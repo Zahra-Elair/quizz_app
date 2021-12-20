@@ -1,13 +1,105 @@
+:root {
+  --background-color: #ffffff;
+  --primary-color: #6714d0;
+  --secondary-color: #393e46;
+  --font-color: #000000;
+}
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: var(--background-color);
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+/****************************************************************/
+
+.header {
+  display: flex;
+  align-items: center;
+  border-bottom: 4px var(--font-color) solid;
+  height: 20vh;
+}
+.logo {
+  width: 9rem;
+  margin-left: 20px;
+}
+.title {
+  font-size: 3rem;
+  display: flex;
+  margin-left: auto;
+  flex: 1 0;
+  justify-content: center;
+  padding-right: 8rem;
+}
+
+#button {
+  background-color: var(--primary-color);
+  width: 200px;
+  height: 50px;
+  font-size: 1.3rem;
+  margin-top: 20px;
+}
+
+.container {
+  max-width: 300px;
+  margin: 70px auto 40px;
+}
+.container h1 {
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+  width: fit-content;
+  margin: 10px auto;
+}
+.home h2 {
+  font-size: 2em;
+  margin-bottom: 30px;
+}
+.home.container,
+.order.container {
+  text-align: center;
+  max-width: 800px;
+}
+/**************************************************/
+.content {
+  height: 50vh;
+  max-width: 600px;
+  margin: 50px auto 40px;
+}
+
+.questions {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin-top: 40px;
+  align-items: stretch;
+}
+.flexItem {
+  width: 500px;
+  align-self: center;
+  text-align: left !important;
+  box-shadow: 5px 5px 5px rgb(190, 190, 190) !important;
+}
+
+.flexItem:focus,
+.flexItem:hover {
+  border: 1.5px solid #6714d0;
+  box-shadow: none;
+}
+
+.footer {
+  height: 15vh;
+  border-top: 4px var(--font-color) solid;
+  display: flex;
+  align-items: baseline;
+  justify-content: space-around;
+  padding-top: 30px;
 }
